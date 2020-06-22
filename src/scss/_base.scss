@@ -1,0 +1,13 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+
+@mixin hest ($radius) {
+    border-radius: $radius;
+}
+
+@mixin mq ($breakpoint) {
+    @media screen and (max-width:$breakpoint) {
+        @content;
+    }
+}
